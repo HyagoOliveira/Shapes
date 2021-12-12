@@ -2,7 +2,7 @@
 
 * Scripts for drawing Shapes.
 * Unity minimum version: **2019.3**
-* Current version: **0.1.0**
+* Current version: **1.0.0**
 * License: **MIT**
 
 ## Summary
