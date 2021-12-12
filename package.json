@@ -1,0 +1,25 @@
+{
+  "name": "com.actioncode.shapes",
+  "displayName": "ActionCode-Shapes",
+  "version": "0.1.0",
+  "unity": "2019.3",
+  "description": "This package contains scripts for drawing Shapes.",
+  "keywords": [
+    "Shapes",
+    "Util"
+  ],
+  "category": "Scripts",
+  "dependencies": {},
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/nostgameteam/shapes#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/nostgameteam/shapes.git"
+  },
+  "documentationUrl": "https://bitbucket.org/nostgameteam/shapes#readme",
+  "changelogUrl": "https://bitbucket.org/nostgameteam/shapes/CHANGELOG.md",
+  "author": {
+    "name": "Hyago Oliveira",
+    "email": "hyagogow@gmail.com"
+  }
+}
