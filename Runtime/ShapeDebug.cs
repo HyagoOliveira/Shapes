@@ -65,6 +65,28 @@ namespace ActionCode.Shapes
         }
 
         /// <summary>
+        /// Draws a circular arc in 3D space.
+        /// </summary>
+        /// <param name="position">The arc center position.</param>
+        /// <param name="rotation">The arc rotation.</param>
+        /// <param name="diameter">The arc diameter.</param>
+        /// <param name="color">The arc color.</param>
+        /// <param name="start">The arc start angle, in degrees.</param>
+        /// <param name="end">The arc end angle, in degrees.</param>
+        public static void DrawArc(Vector3 position, Quaternion rotation,
+            float diameter, int start, int end, Color color)
+        {
+            end = Mathf.Clamp(end, 0, circle.Length - 1);
+            start = Mathf.Clamp(start, 0, circle.Length - 1);
+
+            ShapePoints.UpdatePolygon(circle, position, rotation, diameter);
+            for (int i = start; i < end; i++)
+            {
+                Debug.DrawLine(circle[i], circle[i + 1], color);
+            }
+        }
+
+        /// <summary>
         /// Draws a Cuboid using the given params.
         /// </summary>
         /// <param name="position">The cuboid position.</param>
