@@ -8,7 +8,7 @@ namespace ActionCode.Shapes
     public static class ShapeDebug
     {
         private static readonly Vector3[] plane = new Vector3[4];
-        private static readonly Vector3[] circle = new Vector3[30];
+        private static readonly Vector3[] circle = new Vector3[360];
         private static readonly Vector3[] cuboid = new Vector3[8];
 
         /// <summary>

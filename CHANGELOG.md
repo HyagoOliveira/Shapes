@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+- Increase circle points to 360
+
 ## [1.0.0] - 2021-12-11
 ### Added
 - ShapeDebug
