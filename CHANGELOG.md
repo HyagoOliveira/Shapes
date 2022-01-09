@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.0] - 2022-01-09
 ### Added
 - Draw Arc function
 
@@ -22,5 +23,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - README
 - Initial commit
 
-[Unreleased]: https://bitbucket.org/nostgameteam/shapes/branches/compare/master%0D1.0.0
+[Unreleased]: https://bitbucket.org/nostgameteam/shapes/branches/compare/master%0D1.1.0
+[1.1.0]: https://bitbucket.org/nostgameteam/shapes/src/1.1.0/
 [1.0.0]: https://bitbucket.org/nostgameteam/shapes/src/1.0.0/
