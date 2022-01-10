@@ -38,6 +38,65 @@ namespace ActionCode.Shapes
         }
 
         /// <summary>
+        /// Draws a Capsule using the given params.
+        /// </summary>
+        /// <param name="position">The capsule center position.</param>
+        /// <param name="rightDirection">The capsule right direction.</param>
+        /// <param name="rotation">The capsule rotation.</param>
+        /// <param name="radius">The capsule radius.</param>
+        /// <param name="height">The capsule height.</param>
+        /// <param name="axisDirection">The capsule axis direction.</param>
+        /// <param name="color">The capsule color.</param>
+        public static void DrawCapsule(Vector3 position, Vector3 rightDirection,
+            Quaternion rotation, float radius, float height, Vector3 axisDirection, Color color)
+        {
+            var halfHeight = height * 0.5F;
+            var circleDistance = rotation * axisDirection * (halfHeight - radius);
+            var positiveCirclePos = position + circleDistance;
+            var negativeCirclePos = position - circleDistance;
+            DrawCapsule(positiveCirclePos, negativeCirclePos, rightDirection, rotation, radius, color);
+        }
+
+        /// <summary>
+        /// Draws a Capsule using the given params.
+        /// </summary>
+        /// <param name="positiveCirclePos">The positive circle position used to draw the capsule.</param>
+        /// <param name="negativeCirclePos">The negative circle position used to draw the capsule.</param>
+        /// <param name="rightDirection">The capsule right direction.</param>
+        /// <param name="rotation">The capsule rotation.</param>
+        /// <param name="radius">The capsule radius.</param>
+        /// <param name="color">The capsule color.</param>
+        public static void DrawCapsule(Vector3 positiveCirclePos, Vector3 negativeCirclePos,
+            Vector3 rightDirection, Quaternion rotation, float radius, Color color)
+        {
+            var diameter = radius * 2F;
+            var circlePosDistance = rightDirection * radius;
+            var positiveCirclePos1 = positiveCirclePos + circlePosDistance;
+            var positiveCirclePos2 = positiveCirclePos - circlePosDistance;
+            var negativeCirclePos1 = negativeCirclePos + circlePosDistance;
+            var negativeCirclePos2 = negativeCirclePos - circlePosDistance;
+
+            DrawCircle(positiveCirclePos, rotation, diameter, color);
+            DrawCircle(negativeCirclePos, rotation, diameter, color);
+
+            Debug.DrawLine(positiveCirclePos1, negativeCirclePos1, color);
+            Debug.DrawLine(positiveCirclePos2, negativeCirclePos2, color);
+        }
+
+        public static void DrawCapsule3D(Vector3 positiveCirclePos, Vector3 negativeCirclePos,
+            Vector3 axisDirection, Vector3 rightDirection, Quaternion rotation, float radius, Color color)
+        {
+            var secondCapsuleRotation = rotation * Quaternion.Euler(Vector3.up * 90F);
+            var diameter = radius * 2F;
+
+            DrawCapsule(positiveCirclePos, negativeCirclePos, rightDirection, rotation, radius, color);
+            DrawCapsule(positiveCirclePos, negativeCirclePos, rightDirection, secondCapsuleRotation, radius, color);
+
+            DrawCircle(positiveCirclePos, axisDirection, diameter, color);
+            DrawCircle(negativeCirclePos, axisDirection, diameter, color);
+        }
+
+        /// <summary>
         /// Draws a Circle using th given params.
         /// </summary>
         /// <param name="position">The circle center position.</param>
