@@ -10,13 +10,13 @@
   ],
   "category": "Scripts",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/nostgameteam/shapes#readme",
+  "homepage": "https://github.com/HyagoOliveira/Shapes#readme",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/nostgameteam/shapes.git"
+    "url": "https://github.com/HyagoOliveira/Shapes.git"
   },
-  "documentationUrl": "https://bitbucket.org/nostgameteam/shapes#readme",
-  "changelogUrl": "https://bitbucket.org/nostgameteam/shapes/CHANGELOG.md",
+  "documentationUrl": "https://github.com/HyagoOliveira/Shapes#readme",
+  "changelogUrl": "https://github.com/HyagoOliveira/Shapes/CHANGELOG.md",
   "author": {
     "name": "Hyago Oliveira",
     "email": "hyagogow@gmail.com"

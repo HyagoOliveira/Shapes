@@ -28,7 +28,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - README
 - Initial commit
 
-[Unreleased]: https://bitbucket.org/nostgameteam/shapes/branches/compare/master%0D1.2.0
-[1.2.0]: https://bitbucket.org/nostgameteam/shapes/src/1.2.0/
-[1.1.0]: https://bitbucket.org/nostgameteam/shapes/src/1.1.0/
-[1.0.0]: https://bitbucket.org/nostgameteam/shapes/src/1.0.0/
+[Unreleased]: https://github.com/HyagoOliveira/Shapes/compare/1.2.0...master
+[1.2.0]: https://github.com/HyagoOliveira/Shapes/tree/1.2.0/
+[1.1.0]: https://github.com/HyagoOliveira/Shapes/tree/1.1.0/
+[1.0.0]: https://github.com/HyagoOliveira/Shapes/tree/1.0.0/
